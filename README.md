@@ -1,0 +1,1 @@
+# easy-grub2
