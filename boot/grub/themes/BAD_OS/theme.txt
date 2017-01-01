@@ -1,0 +1,45 @@
+# GRUB2 bad_OS engine.
+# 2015-12-7
+# Joined by Ruyi Boy
+# <<Assassin's Creed Syndicate>> style
+
+# Global Property
+title-text: ""
+title-font: "Sans Regular 12"
+title-color: "#000000"
+message-font: "Fixed Regular 13"
+message-color: "#FFFFFF"
+message-bg-color: "#f6f6f6"
+desktop-image: "background.jpg"
+desktop-color: "#000000"
+terminal-box: "menu_bkg_*.png"
+terminal-font: "Fixed Regular 13"
+
+# Show the boot menu
++ boot_menu {
+		left = 32%
+		width = 37%
+		top = 30%
+		height = 40%
+		item_font = "Sans Regular 12"
+		selected_item_font = "Sans Regular 14"
+		item_color = "#000000"
+		selected_item_color = "#FFFFFF"
+		menu_pixmap_style = "menu_bkg_*.png"
+		selected_item_pixmap_style= "select_bkg_*.png"
+		item_height = 30
+		item_padding = 5
+		item_spacing = 5
+}
+
+# Show bad_OS engine
++ bados_engine {
+		dir_name = loopback_1
+		image_format = jpg
+		size_ratio = 1
+		frame_number = 323
+		left = 0%
+		width = 100%
+		top = 0%
+		height = 100%
+}
